@@ -1,0 +1,27 @@
+.row{
+    margin-left: 20px;
+}
+.movies_row{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.movies_row::-webkit-scrollbar{
+    display: none;
+}
+.movie_poster{
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+    /* transition makes cool out look for transform,when it fix a timing interwell for the play/effect */
+    transition: transform 450ms;
+
+}
+.movie_poster:hover{
+    /* transform is for when it hover the size increase effect as a selecting */
+    transform: scale(1.04);
+}
+.movies_poster_large{
+    max-height: 250px;
+}
